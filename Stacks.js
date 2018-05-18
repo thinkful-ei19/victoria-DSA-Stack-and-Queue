@@ -108,17 +108,16 @@ function sort(stack) {
     while (numStack.top && peek(numStack) > value) {
       stack.push(numStack.pop());
     }
-
     numStack.push(value);
   }
   return display(numStack);
 }
 
 const input = new Stack();
-input.push('1')
-input.push('7')
-input.push('93')
-input.push('91')
-input.push('196')
-input.push('2')
+input.push(137)
+input.push(5)
+input.push(815)
+input.push(8)
+input.push(9)
+input.push(1)
 console.log(sort(input))
